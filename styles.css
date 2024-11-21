@@ -1,0 +1,198 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f1faee; /* Light background for a clean look */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto;
+  margin-bottom: 0;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  background-image: url(./images/hero.jpg);
+  background-position: center;
+  min-height: 400px;
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px; /* Add some padding for better spacing */
+  font-family: "Oleo Script", cursive;
+}
+
+#hero-header {
+  margin-top: 10px;
+  color: #f1faee;
+  background-color: rgba(168, 220, 185, 0.8); /* Transparent Aqua background */
+  text-shadow: 1px 1px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 36px;
+}
+
+#hero-caption {
+  margin-top: 250px;
+  color: #f1faee;
+  background-color: rgba(168, 220, 185, 0.8);
+  text-shadow: 1px 1px black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: auto;
+}
+
+#activities-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a8dcb9;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+#activities-header {
+  color: #1d3557; /* Dark Blue */
+  font-family: "Oleo Script", cursive;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#activities {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+#activities div {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+  background-color: rgba(
+    241,
+    250,
+    238,
+    0.8
+  ); /* Light with slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#activities div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#activities img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+#activities p {
+  margin: 10px 0 0;
+  color: #1d3557;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f1faee;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#card h3,
+#card h4 {
+  margin: 10px 0;
+  color: #1d3557;
+  font-family: "Oleo Script", cursive;
+}
+
+#card p {
+  margin: 10px 0;
+  color: #457b9d;
+  font-size: 16px;
+  text-align: center;
+}
+
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  #activities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #activities div {
+    max-width: 90%;
+  }
+
+  #hero {
+    min-height: 300px;
+    padding: 10px;
+  }
+
+  #hero-header {
+    font-size: 28px;
+  }
+
+  #hero-caption {
+    font-size: 16px;
+  }
+}
